@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Page</title>
+</head>
+<style>
+    .parent{
+        font-family: Arial;
+    }
+    .title{
+        display: flex;
+        height: 80px;
+        justify-content: center;
+    }
+    .title p{
+        color: orangered;
+        font-size: x-small;
+        text-align: center;
+    }
+    .headings{
+        color: black;
+        font-size: x-large;
+    }
+    .img-boxes{
+        margin: 10px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .img-cap-boxes > img{
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 5px;
+        width: 250px;
+        height: 150px;
+    }
+    .img-cap-boxes > p{
+        font-size: x-small;
+        color: grey;
+        margin: 5px;
+        margin-left: 20px;
+    }
+    .img-cap-boxes span{
+        font-size: x-small;
+        color: rgb(0, 0, 0);
+    }
+    .button{
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .button > input{
+        margin: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 30px;
+        border-radius: 0px;
+        font-size: x-small;
+        border: none;
+        color: white;
+        background-color: orangered;
+    }
+    .services{
+        height: 250px;
+        display: grid;
+        width: 70%;
+        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "a b c"
+                             "d e f";
+        padding: 10px;
+    }
+    .subtitle{
+        color: grey;
+    }
+    .icon-box{
+        display: flex;
+    }
+    .icon-box p{
+        font-size: small;
+    }
+    .icon-box span{
+        font-size: xx-small;
+        color: grey;
+    }
+    .icon-box img{
+        height: 50px;
+        margin: 15px;
+    }
+    .services > div:nth-child(1){
+        grid-area: a;
+    }
+    .services > div:nth-child(2){
+        grid-area: b;
+    }
+    .services > div:nth-child(3){
+        grid-area: c;
+    }
+    .services > div:nth-child(4){
+        grid-area: d;
+    }
+    .services > div:nth-child(5){
+        grid-area: e;
+    }
+    .services > div:nth-child(6){
+        grid-area: f;
+    }
+    @media(max-width: 900px){
+        .services{
+            height: 250px;
+            display: grid;
+            width: 60%;
+            margin: auto;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "a b"
+                                 "c d"
+                                 "e f";
+            padding: 10px;
+        }
+        .img-cap-boxes > img{
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 5px;
+            width: 200px;
+            height: 150px;
+        }                 
+    }
+    @media(max-width: 600px){
+        .services{
+            height: 250px;
+            display: grid;
+            width: 50%;
+            margin: auto;
+            grid-template-columns: 1fr;
+            grid-template-areas: "a"
+                                    "b"
+                                    "c"
+                                    "d"
+                                    "e"
+                                    "f";
+            padding: 10px;
+        }
+        .img-cap-boxes > img{
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 5px;
+            width: 120px;
+            height: 100px;
+        }
+    } 
+</style>
+<body>
+    <div class="parent">
+        <div class="title">
+            <p>NEWS & UPDATE<br><span class="headings">Our Blog Posts</span></p>
+        </div>
+        <div class="img-boxes">
+            <div class="img-cap-boxes">
+                <img src="https://via.placeholder.com/150" alt="">
+                <p>29 January, 2019<br><span>Architecture Art Modern</span></p>
+            </div>
+            <div class="img-cap-boxes">
+                <img src="https://via.placeholder.com/150" alt="">
+                <p>29 January, 2019<br><span>Architecture Art Modern</span></p>
+            </div>
+            <div class="img-cap-boxes">
+                <img src="https://via.placeholder.com/150" alt="">
+                <p>29 January, 2019<br><span>Architecture Art Modern</span></p>
+            </div>
+        </div>
+        <div class="button">
+            <input type="button" value="View All Posts">
+        </div>
+        <div class="services-title-box">
+            <div class="title">
+                <p>SERVICES<br><span class="headings">Our Services</span><br><span class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias distinctio recusandae voluptas dolores minus,<br> consectetur eveniet eos dolor. Velit, nihil.</span></p>
+            </div>
+        </div>
+        <div class="services">
+            <div class="icon-box">
+                <img src="https://via.placeholder.com/50" alt="">
+                <p>Innovative Structure<br><span>Lorem ipsum dolor sit amet consectetur.<br> Architecto assumenda earum fugiat<br> rerum necessitatibus omnis.</span></p>
+            </div>
+            <div class="icon-box">
+                <img src="https://via.placeholder.com/50" alt="">
+                <p>Innovative Structure<br><span>Lorem ipsum dolor sit amet consectetur.<br> Architecto assumenda earum fugiat<br> rerum necessitatibus omnis.</span></p>
+            </div>
+            <div class="icon-box">
+                <img src="https://via.placeholder.com/50" alt="">
+                <p>Innovative Structure<br><span>Lorem ipsum dolor sit amet consectetur.<br> Architecto assumenda earum fugiat<br> rerum necessitatibus omnis.</span></p>
+            </div>
+            <div class="icon-box">
+                <img src="https://via.placeholder.com/50" alt="">
+                <p>Innovative Structure<br><span>Lorem ipsum dolor sit amet consectetur.<br> Architecto assumenda earum fugiat<br> rerum necessitatibus omnis.</span></p>
+            </div>
+            <div class="icon-box">
+                <img src="https://via.placeholder.com/50" alt="">
+                <p>Innovative Structure<br><span>Lorem ipsum dolor sit amet consectetur.<br> Architecto assumenda earum fugiat<br> rerum necessitatibus omnis.</span></p>
+            </div>
+            <div class="icon-box">
+                <img src="https://via.placeholder.com/50" alt="">
+                <p>Innovative Structure<br><span>Lorem ipsum dolor sit amet consectetur.<br> Architecto assumenda earum fugiat<br> rerum necessitatibus omnis.</span></p>
+            </div>      
+        </div>
+    </div>
+</body>
+</html>
